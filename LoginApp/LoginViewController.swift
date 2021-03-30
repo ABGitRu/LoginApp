@@ -72,7 +72,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                    message: message,
                                    preferredStyle: .alert)
         
-     let action = UIAlertAction(title: "Ok", style: .cancel) { _ in
+     let action = UIAlertAction(title: "Ok", style: .cancel) {
+        UIAlertAction in
         self.loginTF.text = .none
         self.passwordTF.text = .none
      }
