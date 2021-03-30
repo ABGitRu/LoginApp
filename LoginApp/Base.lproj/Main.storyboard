@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,50 +13,50 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="O6n-dp-MTp">
-                                <rect key="frame" x="55" y="104" width="304" height="102"/>
+                                <rect key="frame" x="55" y="104" width="318" height="102"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your login" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-RG-rYO">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3L4-mM-lLp">
-                                        <rect key="frame" x="0.0" y="68" width="304" height="34"/>
+                                        <rect key="frame" x="0.0" y="68" width="318" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JTq-Wv-3Mj">
-                                <rect key="frame" x="55" y="246" width="304" height="83"/>
+                                <rect key="frame" x="20" y="246" width="388" height="88"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ea-D9-zhk">
-                                        <rect key="frame" x="116" y="0.0" width="72" height="40"/>
+                                        <rect key="frame" x="158" y="0.0" width="72" height="40"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="loginButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fa-g7-r4W"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-TV-7hf">
-                                        <rect key="frame" x="0.5" y="56" width="303" height="27"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-TV-7hf">
+                                        <rect key="frame" x="57" y="56" width="274" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-Qd-D4r">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="27"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                <state key="normal" title="Forgot your username?"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="32"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <state key="normal" title="Forgot username?"/>
                                                 <connections>
                                                     <action selector="remindLoginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzX-9T-ZGG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lx4-oU-C3l">
-                                                <rect key="frame" x="187" y="0.0" width="116" height="27"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
-                                                <state key="normal" title="Forgot your password?"/>
+                                                <rect key="frame" x="152" y="0.0" width="122" height="32"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <state key="normal" title="Forgot password?"/>
                                                 <connections>
                                                     <action selector="remindPasswordTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHW-Vx-p6W"/>
                                                 </connections>
@@ -71,10 +71,10 @@
                         <constraints>
                             <constraint firstItem="O6n-dp-MTp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="8g1-Aj-ON2"/>
                             <constraint firstItem="O6n-dp-MTp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Fqm-xt-ER9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JTq-Wv-3Mj" secondAttribute="trailing" constant="55" id="HDl-vU-pij"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JTq-Wv-3Mj" secondAttribute="trailing" constant="20" id="HDl-vU-pij"/>
                             <constraint firstItem="JTq-Wv-3Mj" firstAttribute="top" secondItem="O6n-dp-MTp" secondAttribute="bottom" constant="40" id="nQg-PF-Got"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O6n-dp-MTp" secondAttribute="trailing" constant="55" id="tLc-TU-iMo"/>
-                            <constraint firstItem="JTq-Wv-3Mj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="tQV-27-2Zp"/>
+                            <constraint firstItem="JTq-Wv-3Mj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tQV-27-2Zp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -85,24 +85,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="89"/>
+            <point key="canvasLocation" x="19.626168224299064" y="88.768898488120954"/>
         </scene>
         <!--Hello View Controller-->
         <scene sceneID="f9W-Bf-Q1d">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="WxQ-ws-GNY" customClass="HelloViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="257-ld-LMM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upP-Jy-dez" userLabel="HelloLabel">
-                                <rect key="frame" x="20" y="104" width="374" height="29"/>
+                                <rect key="frame" x="20" y="104" width="388" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYX-Yp-f8P">
-                                <rect key="frame" x="50" y="173" width="314" height="36"/>
+                                <rect key="frame" x="50" y="811" width="328" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
@@ -116,8 +116,8 @@
                             <constraint firstItem="FYX-Yp-f8P" firstAttribute="leading" secondItem="S2r-X0-GN3" secondAttribute="leading" constant="50" id="1Ve-5J-Avh"/>
                             <constraint firstItem="S2r-X0-GN3" firstAttribute="trailing" secondItem="upP-Jy-dez" secondAttribute="trailing" constant="20" id="3HU-C9-xc8"/>
                             <constraint firstItem="upP-Jy-dez" firstAttribute="leading" secondItem="S2r-X0-GN3" secondAttribute="leading" constant="20" id="E5p-Ee-l7H"/>
+                            <constraint firstItem="S2r-X0-GN3" firstAttribute="bottom" secondItem="FYX-Yp-f8P" secondAttribute="bottom" constant="45" id="WTD-V0-NFK"/>
                             <constraint firstItem="upP-Jy-dez" firstAttribute="top" secondItem="S2r-X0-GN3" secondAttribute="top" constant="60" id="WkA-QJ-VyW"/>
-                            <constraint firstItem="FYX-Yp-f8P" firstAttribute="top" secondItem="upP-Jy-dez" secondAttribute="bottom" constant="40" id="fpQ-6F-dhc"/>
                             <constraint firstItem="S2r-X0-GN3" firstAttribute="trailing" secondItem="FYX-Yp-f8P" secondAttribute="trailing" constant="50" id="k5g-pP-PxO"/>
                         </constraints>
                     </view>

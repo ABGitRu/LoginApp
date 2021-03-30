@@ -13,7 +13,6 @@
 		04B0944A261303630014261D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B09448261303630014261D /* Main.storyboard */; };
 		04B0944C261303640014261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B0944B261303640014261D /* Assets.xcassets */; };
 		04B0944F261303640014261D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B0944D261303640014261D /* LaunchScreen.storyboard */; };
-		04B0945926130B970014261D /* LoginVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0945826130B970014261D /* LoginVCExtension.swift */; };
 		04B0945C261316F00014261D /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0945B261316F00014261D /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		04B0944B261303640014261D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B0944E261303640014261D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B09450261303640014261D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04B0945826130B970014261D /* LoginVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCExtension.swift; sourceTree = "<group>"; };
 		04B0945B261316F00014261D /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				04B09444261303630014261D /* SceneDelegate.swift */,
 				04B09446261303630014261D /* LoginViewController.swift */,
 				04B0945B261316F00014261D /* HelloViewController.swift */,
-				04B0945826130B970014261D /* LoginVCExtension.swift */,
 				04B09448261303630014261D /* Main.storyboard */,
 				04B0944B261303640014261D /* Assets.xcassets */,
 				04B0944D261303640014261D /* LaunchScreen.storyboard */,
@@ -143,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B0945926130B970014261D /* LoginVCExtension.swift in Sources */,
 				04B0945C261316F00014261D /* HelloViewController.swift in Sources */,
 				04B09447261303630014261D /* LoginViewController.swift in Sources */,
 				04B09443261303630014261D /* AppDelegate.swift in Sources */,
