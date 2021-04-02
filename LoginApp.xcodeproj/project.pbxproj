@@ -14,6 +14,12 @@
 		04B0944C261303640014261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B0944B261303640014261D /* Assets.xcassets */; };
 		04B0944F261303640014261D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B0944D261303640014261D /* LaunchScreen.storyboard */; };
 		04B0945C261316F00014261D /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0945B261316F00014261D /* HelloViewController.swift */; };
+		04BF79622616FEBD00110050 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF79612616FEBD00110050 /* User.swift */; };
+		04BF796626170FE000110050 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF796526170FE000110050 /* BioViewController.swift */; };
+		04BF79692617236D00110050 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF79682617236D00110050 /* PhotosTableViewController.swift */; };
+		04BF796C26172A4D00110050 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF796B26172A4D00110050 /* PhotosTableViewCell.swift */; };
+		04BF79732617672700110050 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF79722617672700110050 /* KeyboardExtension.swift */; };
+		04BF79762617677500110050 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF79752617677500110050 /* AlertExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		04B0944E261303640014261D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B09450261303640014261D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B0945B261316F00014261D /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		04BF79612616FEBD00110050 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04BF796526170FE000110050 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		04BF79682617236D00110050 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		04BF796B26172A4D00110050 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		04BF79722617672700110050 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
+		04BF79752617677500110050 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,70 @@
 		04B09441261303630014261D /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				04B09442261303630014261D /* AppDelegate.swift */,
-				04B09444261303630014261D /* SceneDelegate.swift */,
-				04B09446261303630014261D /* LoginViewController.swift */,
-				04B0945B261316F00014261D /* HelloViewController.swift */,
-				04B09448261303630014261D /* Main.storyboard */,
-				04B0944B261303640014261D /* Assets.xcassets */,
-				04B0944D261303640014261D /* LaunchScreen.storyboard */,
-				04B09450261303640014261D /* Info.plist */,
+				04BF795F2616FE7700110050 /* ViewControllers */,
+				04BF795C2616FE3A00110050 /* Models */,
+				04BF795B2616FE2300110050 /* Storyboards */,
+				04BF796E2617660700110050 /* Extensions */,
+				04BF795E2616FE6300110050 /* Supporting */,
+				04BF795D2616FE4E00110050 /* Resources */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		04BF795B2616FE2300110050 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04B09448261303630014261D /* Main.storyboard */,
+				04B0944D261303640014261D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04BF795C2616FE3A00110050 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BF79612616FEBD00110050 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04BF795D2616FE4E00110050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04B0944B261303640014261D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04BF795E2616FE6300110050 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				04B09442261303630014261D /* AppDelegate.swift */,
+				04B09444261303630014261D /* SceneDelegate.swift */,
+				04B09450261303640014261D /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		04BF795F2616FE7700110050 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B09446261303630014261D /* LoginViewController.swift */,
+				04B0945B261316F00014261D /* HelloViewController.swift */,
+				04BF796526170FE000110050 /* BioViewController.swift */,
+				04BF79682617236D00110050 /* PhotosTableViewController.swift */,
+				04BF796B26172A4D00110050 /* PhotosTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04BF796E2617660700110050 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04BF79722617672700110050 /* KeyboardExtension.swift */,
+				04BF79752617677500110050 /* AlertExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BF79762617677500110050 /* AlertExtension.swift in Sources */,
 				04B0945C261316F00014261D /* HelloViewController.swift in Sources */,
+				04BF79732617672700110050 /* KeyboardExtension.swift in Sources */,
 				04B09447261303630014261D /* LoginViewController.swift in Sources */,
 				04B09443261303630014261D /* AppDelegate.swift in Sources */,
+				04BF79622616FEBD00110050 /* User.swift in Sources */,
+				04BF796C26172A4D00110050 /* PhotosTableViewCell.swift in Sources */,
 				04B09445261303630014261D /* SceneDelegate.swift in Sources */,
+				04BF796626170FE000110050 /* BioViewController.swift in Sources */,
+				04BF79692617236D00110050 /* PhotosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

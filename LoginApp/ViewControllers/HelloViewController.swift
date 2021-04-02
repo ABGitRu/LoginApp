@@ -15,6 +15,8 @@ class HelloViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloLabel.text = "Hello, \(userName ?? "Inkognito") \u{1F680}"
+        if let user = userName {
+            helloLabel.text = "Hello, \(user) 🏎"
+        }
     }
 }
