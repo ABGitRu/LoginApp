@@ -14,9 +14,6 @@ class BioViewController: UIViewController {
     @IBOutlet var moreInfoButton: UIButton!
     
     var user: User!
-    var photo: String!
-    var bio: String!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +23,15 @@ class BioViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let photosVC = segue.destination as? PhotosTableViewController else { return }
-
-                photosVC.cellCount = user.person.album.photoOfAchievement.count
-                photosVC.photo = user.person.album.photoOfAchievement
-                photosVC.photoDescription = user.person.album.descriptionOfAchievements
+        
+        photosVC.cellCount = User.getImages().count
+        photosVC.photo = User.getImages()
+        photosVC.photoDescription = User.getImageDesriptions()
     }
     
     private func getInfo() {
-        photoView.image = UIImage(imageLiteralResourceName: photo)
-        bioLabel.text = bio
+        photoView.image = UIImage(imageLiteralResourceName: User.getPhoto())
+        bioLabel.text = User.getBio()
     }
 
 }
