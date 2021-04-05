@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         for viewController in viewControllers {
             if let helloVC = viewController as? HelloViewController {
-                helloVC.userName = User.getFullName()
+                helloVC.userName = user.person.fullname
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let bioVC = navigationVC.topViewController as? BioViewController else { return }
                 bioVC.user = user
